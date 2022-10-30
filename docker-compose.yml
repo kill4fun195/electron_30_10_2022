@@ -1,0 +1,11 @@
+version: '2.4'
+services:
+  chrome:
+    image: browserless/chrome
+    ports:
+      - '4000:3000'
+    environment:
+      - ENABLE_DEBUGGER=false
+      - ENABLE_XVBF=false
+    volumes:
+      - /Users/nhannguyen/Documents/docker_seeding_images:/attached_images
