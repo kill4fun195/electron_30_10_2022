@@ -7,5 +7,4 @@ services:
     environment:
       - ENABLE_DEBUGGER=false
       - ENABLE_XVBF=false
-    volumes:
-      - /Users/nhannguyen/Documents/docker_seeding_images:/attached_images
+   
