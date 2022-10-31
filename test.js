@@ -1,6 +1,6 @@
 const { User, Comment, CommentSetting, Proxy, Post } = require('./app/models');
-// const cheerio = require('cheerio');
-// const fs = require('fs');
+const cheerio = require('cheerio');
+const fs = require('fs');
 const ParseService = require('./app/services/format/ParseService')
 
 const helper = require('./app/services/format/HelperService')
@@ -14,16 +14,16 @@ async function write_test_html(content) {
 	}); 
 }
 
-async function readFile(path) {
-  return new Promise((resolve, reject) => {
-    fs.readFile(path, 'utf8', function (err, data) {
-      if (err) {
-        reject(err);
-      }
-      resolve(data);
-    });
-  });
-}
+// async function readFile(path) {
+//   return new Promise((resolve, reject) => {
+//     fs.readFile(path, 'utf8', function (err, data) {
+//       if (err) {
+//         reject(err);
+//       }
+//       resolve(data);
+//     });
+//   });
+// }
 
 async function test() {
   const BrowserPostService = require('./app/services/browser/BrowserPostService')
