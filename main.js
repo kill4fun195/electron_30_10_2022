@@ -15,15 +15,10 @@ function createWindow() {
     },
   });
 
-  const indexPath = url.format({
-    protocol: 'file:',
-    pathname: path.join(__dirname, 'dist', 'index.html'),
-    slashes: true,
-  });
 
-  // setTimeout(function () {
-  //   mainWindow.loadURL(indexPath);
-  // }, 3000);
+  setTimeout(function () {
+    mainWindow.loadURL(indexPath);
+  }, 3000);
 
   mainWindow.loadURL(indexPath);
 
